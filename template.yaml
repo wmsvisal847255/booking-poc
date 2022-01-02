@@ -37,14 +37,14 @@ Resources:
       StageName: !Ref Environment
       TracingEnabled: true
       Cors: "'*'"
-      Auth:
-        DefaultAuthorizer: MyCognitoAuthorizer
-        Authorizers:
-          MyCognitoAuthorizer:
-            UserPoolArn: 
-              Fn::GetAtt:
-                - iitecomuserpool-UserPool
-                - Arn
+      # Auth:
+      #   DefaultAuthorizer: MyCognitoAuthorizer
+      #   Authorizers:
+      #     MyCognitoAuthorizer:
+      #       UserPoolArn: 
+      #         Fn::GetAtt:
+      #           - iitecomuserpool-UserPool
+      #           - Arn
               # Fn::ImportValue: !FindInMap [ResourcesName, !Ref Environment, arn]
 
   BookingTrip:
