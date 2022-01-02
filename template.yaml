@@ -20,15 +20,15 @@ Mappings:
     dev:
       tableName: BookingTripDev
       tableNameArn: BookingTripDevArn
-      arn: UserPoolArnDev
+      arn: iitecomuserpool-UserPool
     staging:
       tableName: BookingTripStaging
       tableNameArn: BookingTripStagingArn
-      arn: UserPoolArnStaging
+      arn: iitecomuserpool-UserPool
     prod:
       tableName: BookingTripProd
       tableNameArn: BookingTripProdArn
-      arn: UserPoolArnProd
+      arn: iitecomuserpool-UserPool
 
 Resources:
   BookingApi:
