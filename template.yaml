@@ -43,7 +43,7 @@ Resources:
           MyCognitoAuthorizer:
             UserPoolArn: 
               Fn::GetAtt:
-                - iitecomuserpool
+                - iitecomuserpool-UserPool
                 - Arn
               # Fn::ImportValue: !FindInMap [ResourcesName, !Ref Environment, arn]
 
